@@ -3,6 +3,7 @@
 
 A comprehensive Python-based application for extracting, processing, and analyzing data from PDF and DOCX documents. This app integrates advanced features for text extraction, table processing, image analysis, relationship mapping, and report generation, making it ideal for financial reports and other structured documents.
 
+
 ---
 
 ## Table of Contents
