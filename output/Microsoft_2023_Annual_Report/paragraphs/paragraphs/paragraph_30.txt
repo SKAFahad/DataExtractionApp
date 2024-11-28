@@ -1,0 +1,1 @@
+We’re also applying AI across our low-code/no-code toolchain to help domain experts across an organization automate workflows, create apps and webpages, build virtual agents, or analyze data, using just natural language with copilots in Power Platform. More than 63,000 organizations have used AI-powered capabilities in Power Platform to date. 

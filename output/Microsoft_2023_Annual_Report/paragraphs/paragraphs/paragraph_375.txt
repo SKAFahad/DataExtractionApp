@@ -1,0 +1,1 @@
+Additionally, we are extending our infrastructure beyond the planet, bringing cloud computing to space. Azure Orbital is a fully managed ground station as a service for fast downlinking of data. 

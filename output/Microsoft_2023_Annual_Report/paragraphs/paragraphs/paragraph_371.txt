@@ -1,0 +1,1 @@
+We are accelerating our development of mixed reality solutions with new Azure services and devices. Microsoft Mesh enables organizations to create custom, immersive experiences for the workplace to help bring remote and hybrid workers and teams together. 

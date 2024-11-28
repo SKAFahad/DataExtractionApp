@@ -1,0 +1,1 @@
+•	Leading electronic health records vendor Epic is addressing some of the biggest challenges facing the healthcare industry today—including physician burnout—by deploying a wide range of copilot solutions built on Azure OpenAI Service and Dragon Ambient eXperience Copilot. 

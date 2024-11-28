@@ -1,0 +1,1 @@
+•	Nonprofit The Contingent is matching foster families with children in need using Dynamics 365, Power BI, and Azure, with an eye on using AI to amplify its work across the US. 

@@ -1,0 +1,12 @@
+PyPDF2
+pytesseract
+docx2txt
+langdetect
+pdf2image
+Pillow
+spacy
+transformers
+torch
+tabula-py
+python-docx
+reportlab
