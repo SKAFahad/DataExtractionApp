@@ -3,7 +3,7 @@ import os
 import logging
 from data_extraction.text_extraction import extract_text_from_file
 from data_extraction.image_extraction import extract_images_from_file
-from data_extraction.table_extraction import extract_tables_from_file
+from data_extraction.table_extraction import TableExtractor
 from data_extraction.relationship_mapping import map_and_save_relationships
 from data_extraction.report_generation import generate_findings_report
 from data_extraction.utils import ensure_output_folder
@@ -41,19 +41,23 @@ def process_file(input_path, output_folder):
     logging.info("Extracting tables...")
     tables_folder = os.path.join(output_folder, "tables")
     ensure_output_folder(tables_folder)
-    tables = extract_tables_from_file(input_path, tables_folder)
+
+    table_extractor = TableExtractor(input_path)
+    table_extractor.save_tables("SOFP", tables_folder)  # Statement of Financial Position
+    table_extractor.save_tables("SOPL", tables_folder)  # Statement of Profit or Loss
+    table_extractor.save_tables("SOCF", tables_folder)  # Statement of Cash Flows
 
     # Map Relationships
     logging.info("Mapping relationships...")
     relationships_folder = os.path.join(output_folder, "relationships")
     ensure_output_folder(relationships_folder)
-    map_and_save_relationships(text_data["text"], images, tables, relationships_folder)
+    map_and_save_relationships(text_data["text"], images, [], relationships_folder)
 
     # Generate Findings Report
     logging.info("Generating findings report...")
     findings_folder = os.path.join(output_folder, "findings")
     ensure_output_folder(findings_folder)
-    generate_findings_report(text_data["text"], images, tables, findings_folder)
+    generate_findings_report(text_data["text"], images, [], findings_folder)
 
     logging.info(f"Processing completed for: {input_path}")
 
