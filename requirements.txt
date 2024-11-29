@@ -1,28 +1,28 @@
-# Core Libraries
-PyPDF2==3.0.1           # For PDF text extraction
-textract==1.6.5         # To handle text extraction from various formats
-docx2txt==0.8           # For DOCX text extraction
-langdetect==1.0.9       # For language detection
-pandas==1.5.3           # For handling tabular data
-numpy==1.24.3           # For numerical operations
-Pillow==9.5.0           # For image processing
 
-# NLP and Deep Learning Libraries
-spacy==3.5.3            # For advanced NLP tasks
-transformers==4.33.2    # For text summarization and captioning
-torch==2.1.0            # For deep learning model execution
-sentencepiece==0.1.99   # Required by transformers library
+# PDF and Text Extraction
+PyPDF2==3.0.0         # Extracts text and metadata from PDFs
+textract==1.6.5       # General text extraction from various file types
+docx2txt==0.8         # Extracts text from DOCX files
 
-# Table Extraction
-tabula-py==2.7.0        # For table extraction from PDFs (requires Java)
-python-docx==0.8.11     # For DOCX table extraction
-
-# PDF Report Generation
-reportlab==3.6.14       # For generating PDF reports
+# Data Manipulation
+pandas==1.5.3         # Handles tabular data for table extraction and analysis
 
 # PDF and Image Processing
-PyMuPDF==1.21.1         # For image extraction from PDFs
-pdf2image==1.16.3       # For converting PDF pages to images
+PyMuPDF==1.22.3       # Extracts images and text from PDFs
+camelot-py[cv]==0.10.1 # Extracts tables from PDFs
+python-docx==0.8.11   # Extracts tables and text from DOCX files
+Pillow==9.5.0         # Handles image compression and manipulation
 
-# Additional Tools
-tqdm==4.68.0            # For progress bars in the command-line interface
+# Natural Language Processing
+spacy==3.6.1          # Performs Named Entity Recognition (NER) and linguistic analysis
+transformers==4.33.3  # Provides pre-trained models for summarization and captioning
+torch==2.0.1          # Framework for deep learning and NLP tasks
+langdetect==1.0.9     # Detects the language of extracted text
+
+# Reporting and Visualization
+reportlab==3.6.12     # Creates structured PDF reports
+tabula-py==2.5.1      # Parses tables from PDFs using Java
+
+# Utilities
+tqdm==4.65.0          # Adds progress bars for command-line tasks
+sentencepiece==0.1.99 # Tokenization for transformer-based models
